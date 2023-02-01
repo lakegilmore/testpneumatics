@@ -50,7 +50,12 @@ public class GearboxShiftHi extends InstantCommand {
     // Called once when this command runs
     @Override
     public void initialize() {
+
+        m_gearboxShift.myValveForward();  //If you look deeper in the way and instant command works there is a isFinished the returns true
+
     }
+
+
 
     @Override
     public boolean runsWhenDisabled() {

@@ -50,6 +50,9 @@ public class GearBoxShiftLow extends CommandBase {
     // Called when the command is initially scheduled.
     @Override
     public void initialize() {
+
+        m_gearboxShift.myValveReverse(); //Runns only onece each time the command is activated
+
     }
 
     // Called every time the scheduler runs while the command is scheduled.
@@ -65,7 +68,9 @@ public class GearBoxShiftLow extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
-        return false;
+       
+        return true;   // This will make the command act just likd an Instant command
+
     }
 
     @Override

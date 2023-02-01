@@ -66,7 +66,13 @@ gearbox_Double_Sol = new DoubleSolenoid(11, PneumaticsModuleType.CTREPCM, 0, 1);
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-    public void myValveForward(){gearbox_Double_Sol.set(Value.kForward);}
+    public void myValveForward(){
+        gearbox_Double_Sol.set(Value.kForward);
+    }
+   
+    public void myValveReverse(){
+        gearbox_Double_Sol.set(Value.kReverse);
+    }
     
 }
 
